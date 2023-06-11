@@ -1,11 +1,11 @@
 #!groovy 
 
-tools {nodejs "node"}
 node {
    stage 'Checkout'
         checkout scm
 
    stage 'Setup'
+        tools name: "node"
         sh 'npm config set registry  http://registry.npmjs.org/'
         sh 'npm install'
 
