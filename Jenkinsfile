@@ -6,6 +6,7 @@ node {
 
    stage 'Setup'
         tool name: "node"
+        sh 'sudo yum install npm'
         sh 'npm config set registry  http://registry.npmjs.org/'
         sh 'npm install'
 
