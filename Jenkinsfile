@@ -5,7 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
-        tools name: "node"
+        tool name: "node"
         sh 'npm config set registry  http://registry.npmjs.org/'
         sh 'npm install'
 
